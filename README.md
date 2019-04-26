@@ -21,12 +21,8 @@
 
 **3. Some mostly-used code**
   
-`
 https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/pytorch1_0_.ipynb
-`
   
 **4. some mostly-happened problems**
   
-`
 https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/some_problems.md
-`
