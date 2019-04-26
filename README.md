@@ -1,5 +1,5 @@
 # pytorch1.0_MostUse
-> Some mostly-used code in PyTorch 1.0
+> Some mostly-used code and some mostly-happened problems in PyTorch 1.0
 
 ## Use Google Colab
   
@@ -18,3 +18,15 @@
 <p>
   <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/2.png" width=400>
 </p>
+
+**3. Some mostly-used code**
+  
+`
+https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/pytorch1_0_.ipynb
+`
+  
+**4. some mostly-happened problems**
+  
+`
+https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/some_problems.md
+`
