@@ -1,4 +1,4 @@
-#### 1. nn.Module.cuda() 和 Tensor.cuda() have different effects.  
+#### 1. nn.Module.cuda() and Tensor.cuda() have different effects.  
 ```
 nn.Module:
 model = model.cuda() # migrate the memory of model itself
