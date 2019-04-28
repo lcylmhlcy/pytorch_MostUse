@@ -39,9 +39,12 @@ if ep < 50:
     lr = 1e-4
 ```
 #### 5. nn.Dataparallel
+Offical: torch.nn.DataParallel(model, deviceids, outputdevice, dim)
 - Data is not on the same GPU while using nn.Dataparallel.  
-  Put the data on the same GPU by using `.cuda()`. 
+  **Put the data on the same GPU by using `.cuda()`.**  
+  
 - nn.Dataparallel model load  
+  **Use model.module instead.**
   ```
   def get_model(self):
     if self.nGPU == 1:         
@@ -49,3 +52,5 @@ if ep < 50:
     else:         
         return self.model.module 
   ```
+
+-  
