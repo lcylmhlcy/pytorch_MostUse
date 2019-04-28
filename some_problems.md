@@ -38,15 +38,14 @@ if ep < 50:
  elif ep < 300:
     lr = 1e-4
 ```
-  
-#### 5. Data is not on the same GPU while using nn.Dataparallel.  
-Put the data on the same GPU by using `.cuda()`.  
-
-#### 6. nn.Dataparallel model load  
-```
-def get_model(self):
-  if self.nGPU == 1:         
-      return self.model     
-  else:         
-      return self.model.module 
-```
+#### 5. nn.Dataparallel
+- Data is not on the same GPU while using nn.Dataparallel.  
+  Put the data on the same GPU by using `.cuda()`. 
+- nn.Dataparallel model load  
+  ```
+  def get_model(self):
+    if self.nGPU == 1:         
+        return self.model     
+    else:         
+        return self.model.module 
+  ```
