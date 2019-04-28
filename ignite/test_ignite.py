@@ -43,7 +43,7 @@ def get_data_loaders(train_batch_size, val_batch_size):
                             batch_size=val_batch_size, shuffle=False)
     return train_loader, val_loader
 
-
+# ----important code-----------------------------------------------------------------------------------
 def run(train_batch_size, val_batch_size, epochs, lr, momentum, log_interval):
     train_loader, val_loader = get_data_loaders(train_batch_size, val_batch_size)
     model = Net()
@@ -53,27 +53,30 @@ def run(train_batch_size, val_batch_size, epochs, lr, momentum, log_interval):
         device = 'cuda'
 
     optimizer = SGD(model.parameters(), lr=lr, momentum=momentum)
+    
+    # define a trainer
     trainer = create_supervised_trainer(model, optimizer, F.nll_loss, device=device)
+    # define a evaluator
     evaluator = create_supervised_evaluator(model,
                                             metrics={'accuracy': Accuracy(),
                                                      'nll': Loss(F.nll_loss)},
                                             device=device)
-
-    desc = "ITERATION - loss: {:.2f}"
+    # Print
+    desc = "ITERATION - loss: {:.2f}" # the loss of each iteration while training
     pbar = tqdm(
         initial=0, leave=False, total=len(train_loader),
         desc=desc.format(0)
-    )
+    ) # Progress of the current iteration in the entire epoch
 
-    @trainer.on(Events.ITERATION_COMPLETED)
+    @trainer.on(Events.ITERATION_COMPLETED) # call this function when iteration is completed
     def log_training_loss(engine):
         iter = (engine.state.iteration - 1) % len(train_loader) + 1
 
         if iter % log_interval == 0:
-            pbar.desc = desc.format(engine.state.output)
-            pbar.update(log_interval)
+            pbar.desc = desc.format(engine.state.output) # update the training loss
+            pbar.update(log_interval) # update the progress bar
 
-    @trainer.on(Events.EPOCH_COMPLETED)
+    @trainer.on(Events.EPOCH_COMPLETED) # call this function when epoch is completed
     def log_training_results(engine):
         pbar.refresh()
         evaluator.run(train_loader)
@@ -85,7 +88,7 @@ def run(train_batch_size, val_batch_size, epochs, lr, momentum, log_interval):
             .format(engine.state.epoch, avg_accuracy, avg_nll)
         )
 
-    @trainer.on(Events.EPOCH_COMPLETED)
+    @trainer.on(Events.EPOCH_COMPLETED) # call this function when epoch is completed
     def log_validation_results(engine):
         evaluator.run(val_loader)
         metrics = evaluator.state.metrics
@@ -99,7 +102,7 @@ def run(train_batch_size, val_batch_size, epochs, lr, momentum, log_interval):
 
     trainer.run(train_loader, max_epochs=epochs)
     pbar.close()
-
+# ------------------------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
     parser = ArgumentParser()
