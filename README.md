@@ -27,8 +27,11 @@ https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/pytorch1_0_.ipynb
   
 https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/some_problems.md
   
-**5. ignite**
+**5. ignite: High-level library to help with training neural networks in PyTorch**
+
+**6. Visualization**
+
+- [TensorboardX](https://github.com/lanpa/tensorboardX): tensorboard for pytorch
+- [Visdom](https://github.com/facebookresearch/visdom): A flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
   
-High-level library to help with training neural networks in PyTorch
-  
-**6. torchvision functions**
+**7. torchvision functions**
