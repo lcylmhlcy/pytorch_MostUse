@@ -9,12 +9,12 @@
   
 **1. GPU Profile**  
 <p>
-  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/1.png" width=400>
+  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/1.png" width=600>
 </p>
   
 **2. PyTorch Profile**  
 <p>
-  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/2.png" width=400>
+  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/2.png" width=600>
 </p>
   
 **3. [Some mostly-used code](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/pytorch1_0_.ipynb)**
