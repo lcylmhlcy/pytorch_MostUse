@@ -17,16 +17,12 @@
   <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/2.png" width=400>
 </p>
   
-**3. Some mostly-used code**
-https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/pytorch1_0_.ipynb
+**3. [Some mostly-used code](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/pytorch1_0_.ipynb)**
   
-**4. some mostly-happened problems**
-https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/some_problems.md
+**4. [some mostly-happened problems](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/some_problems.md)**
   
-**5. ignite: High-level library to help with training neural networks in PyTorch**
-  
-**6. Visualization**
+**5. [ignite: High-level library to help with training neural networks in PyTorch](https://github.com/lcylmhlcy/pytorch1.0_MostUse/tree/master/ignite)**
 - [TensorboardX](https://github.com/lanpa/tensorboardX): tensorboard for pytorch
 - [Visdom](https://github.com/facebookresearch/visdom): A flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
   
-**7. torchvision functions**
+**7. [torchvision functions](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/torchvision.md)**
