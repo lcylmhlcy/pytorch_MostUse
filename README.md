@@ -25,4 +25,4 @@
 - [TensorboardX](https://github.com/lanpa/tensorboardX): tensorboard for pytorch
 - [Visdom](https://github.com/facebookresearch/visdom): A flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
   
-**7. [torchvision functions](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/torchvision.md)**
+**6. [torchvision functions](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/torchvision.md)**
