@@ -26,3 +26,9 @@ https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/pytorch1_0_.ipynb
 **4. some mostly-happened problems**
   
 https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/some_problems.md
+  
+**5. ignite**
+  
+High-level library to help with training neural networks in PyTorch
+  
+**6. torchvision functions**
