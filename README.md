@@ -29,3 +29,6 @@
 **6. [torchvision functions](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/torchvision.md)**  
   
 **7. [TVM](https://github.com/dmlc/tvm): End to End Deep Learning Compiler Stack**  
+- TVM integration into PyTorch: https://github.com/pytorch/tvm  
+  
+**8. [Glow](https://github.com/pytorch/glow): Compiler for Neural Network hardware accelerators**  
