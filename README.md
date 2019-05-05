@@ -26,4 +26,6 @@
 - [Visdom](https://github.com/facebookresearch/visdom): A flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
 - PyTorch 1.1 has included tensorboard. **[torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html)**
   
-**6. [torchvision functions](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/torchvision.md)**
+**6. [torchvision functions](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/torchvision.md)**  
+  
+**7. [TVM](https://github.com/dmlc/tvm): End to End Deep Learning Compiler Stack**  
