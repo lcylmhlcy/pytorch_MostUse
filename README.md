@@ -32,3 +32,6 @@
 - TVM integration into PyTorch: https://github.com/pytorch/tvm  
   
 **8. [Glow](https://github.com/pytorch/glow): Compiler for Neural Network hardware accelerators**  
+  
+**9. [Ax](https://github.com/facebook/Ax) + [BoTorch](https://github.com/pytorch/botorch): Ax is an accessible, general-purpose platform for understanding, managing, deploying, and automating adaptive experiments.**
+  Adaptive experimentation is the machine-learning guided process of iteratively exploring a (possibly infinite) parameter space in order to identify optimal configurations in a resource-efficient manner. Ax currently supports Bayesian optimization and bandit optimization as exploration strategies. **Bayesian optimization in Ax is powered by BoTorch, a modern library for Bayesian optimization research built on PyTorch.**  
