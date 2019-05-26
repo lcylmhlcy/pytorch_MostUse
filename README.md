@@ -22,15 +22,15 @@
 4. [some mostly-happened problems](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/some_problems.md)  
   
 5. [ignite: High-level library to help with training neural networks in PyTorch](https://github.com/lcylmhlcy/pytorch1.0_MostUse/tree/master/ignite)  
-  - [TensorboardX](https://github.com/lanpa/tensorboardX): tensorboard for pytorch
-  - [Visdom](https://github.com/facebookresearch/visdom): A flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
-  - PyTorch 1.1 has included tensorboard. **[torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html)  
+    - [TensorboardX](https://github.com/lanpa/tensorboardX): tensorboard for pytorch
+    - [Visdom](https://github.com/facebookresearch/visdom): A flexible tool for creating, organizing, and sharing visualizations of live, rich data. 
+    - PyTorch 1.1 has included tensorboard. **[torch.utils.tensorboard](https://pytorch.org/docs/stable/tensorboard.html)  
   
 6. [torchvision functions](https://github.com/lcylmhlcy/pytorch1.0_MostUse/blob/master/torchvision.md)  
-  - [torchvision 0.3 Blog](https://github.com/pytorch/vision/releases)
+    - [torchvision 0.3 Blog](https://github.com/pytorch/vision/releases)
 
 7. [TVM](https://github.com/dmlc/tvm): End to End Deep Learning Compiler Stack  
-  - TVM integration into PyTorch: https://github.com/pytorch/tvm  
+    - TVM integration into PyTorch: https://github.com/pytorch/tvm  
   
 8. [Glow](https://github.com/pytorch/glow): Compiler for Neural Network hardware accelerators  
 
