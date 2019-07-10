@@ -12,6 +12,21 @@
   <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/1.png" width=600>
 </p>
   
+```
+# Mount Google Cloud Disk
+from google.colab import drive
+drive.mount('/content/drive')
+```
+  
+<p>
+  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/10.png" width=600>
+</p>
+  
+<p>
+  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/11.png" width=600>
+  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/12.png" width=600>
+</p>
+  
 2. PyTorch Profile  
 <p>
   <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/2.png" width=600>
