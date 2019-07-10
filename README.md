@@ -23,8 +23,8 @@ drive.mount('/content/drive')
 </p>
   
 <p>
-  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/11.png" width=600>
-  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/12.png" width=600>
+  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/11.png" width=200>
+  <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/12.png" width=200>
 </p>
   
 2. PyTorch Profile  
