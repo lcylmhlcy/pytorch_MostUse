@@ -1,7 +1,6 @@
 # torchvision
 
 ## [torchvision.datasets](https://pytorch.org/docs/stable/torchvision/datasets.html)
-
 - torchvision.datasets.MNIST(root, train=True, transform=None, target_transform=None, download=False)
 - torchvision.datasets.FashionMNIST(root, train=True, transform=None, target_transform=None, download=False)
 - torchvision.datasets.KMNIST(root, train=True, transform=None, target_transform=None, download=False)
@@ -26,7 +25,6 @@
 - [Imagenet-12](https://github.com/facebook/fb.resnet.torch/blob/master/INSTALL.md#download-the-imagenet-dataset): use ImageFolder
 
 ## [torchvision.models](https://pytorch.org/docs/stable/torchvision/models.html)
-
 - torchvision.models.alexnet(pretrained=False)
 - torchvision.models.vgg11(pretrained=False)
 - torchvision.models.vgg11_bn(pretrained=False)
@@ -77,23 +75,18 @@ torchvision.transforms.Compose(transforms)
 - torchvision.transforms.TenCrop(size, vertical_flip=False)
 
 ### Transforms on torch.Tensor
-
 - torchvision.transforms.LinearTransformation(transformation_matrix)
 - torchvision.transforms.Normalize(mean, std, inplace=False)
 
 ### Conversion Transforms
-
 - torchvision.transforms.ToPILImage(mode=None)
 - torchvision.transforms.ToTensor
 
 ### Generic Transforms
-
 - torchvision.transforms.Lambda(lambd)
 
 ### Functional Transforms
-
 Functional transforms give you fine-grained control of the transformation pipeline. As opposed to the transformations above, functional transforms don’t contain a random number generator for their parameters. That means you have to specify/generate all parameters, but you can reuse the functional transform. For example, you can apply a functional transform to multiple images like this:
-
 - torchvision.transforms.functional.adjust_brightness(img, brightness_factor)
 - torchvision.transforms.functional.adjust_contrast(img, contrast_factor)
 - torchvision.transforms.functional.adjust_gamma(img, gamma, gain=1)
@@ -115,6 +108,17 @@ Functional transforms give you fine-grained control of the transformation pipeli
 - torchvision.transforms.functional.vflip(img)
 
 ## [torchvision.utils](https://pytorch.org/docs/stable/torchvision/utils.html)
-
 - torchvision.utils.make_grid(tensor, nrow=8, padding=2, normalize=False, range=None, scale_each=False, pad_value=0)
 - torchvision.utils.save_image(tensor, filename, nrow=8, padding=2, normalize=False, range=None, scale_each=False, pad_value=0)
+
+## [transforms extend]
+- [dropout]()
+- [Cutout](https://github.com/uoguelph-mlrg/Cutout)
+- [Mixup](https://github.com/facebookresearch/mixup-cifar10)
+- [Label smoothing](https://blog.csdn.net/winycg/article/details/88410981)
+- [random erasing](https://github.com/zhunzhong07/Random-Erasing)
+- [RICAP](https://github.com/4uiiurz1/pytorch-ricap)
+- [torchsample](https://github.com/ncullen93/torchsample#data-augmentation-and-datasets)
+- [AutoAugment](https://github.com/DeepVoltaire/AutoAugment)
+- [Augmentor](https://github.com/mdbloice/Augmentor)
+- [albumentations](https://github.com/albu/albumentations)
