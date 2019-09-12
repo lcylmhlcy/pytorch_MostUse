@@ -71,3 +71,16 @@ The problem is that by default, the network does not allow multiple backwards() 
 loss.backward(retain_graph=True)
 ```
 
+#### 8. model.train() and model.eval()
+While training, use model.train(); While testing, use model.eval(), and with torch.no_grad().
+- model.train()：使 model 变成训练模式，此时 dropout 和 batch normalization 的操作在训练起到防止网络过拟合的问题。
+- model.eval()：PyTorch会自动把 BN 和 DropOut 固定住，不会取平均，而是用训练好的值。不然的话，一旦测试集的 Batch Size 过小，很容易就会被 BN 层导致生成图片颜色失真极大。
+- with torch.no_grad()：PyTorch 将不再计算梯度，这将使得模型 forward 的时候，显存的需求大幅减少，速度大幅提高。
+注意：若模型中具有 Batch Normalization 操作，想固定该操作进行训练时，需调用对应的 module 的 eval() 函数。这是因为 BN Module 除了参数以外，还会对输入的数据进行统计，若不调用 eval()，统计量将发生改变！
+```
+for module in model.modules():
+    module.eval()
+```
+Explanations on other hands：
+- model.eval() will notify all your layers that you are in eval mode, that way, batchnorm or dropout layers will work in eval model instead of training mode.
+- torch.no_grad() impacts the autograd engine and deactivate it. It will reduce memory usage and speed up computations but you won’t be able to backprop (which you don’t want in an eval script).
