@@ -11,14 +11,17 @@
     <p>
       <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/1.png" width=600>
     </p>
+    
     ```
     # Mount Google Cloud Disk
     from google.colab import drive
     drive.mount('/content/drive')
     ```
+    
     <p>
       <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/10.png" width=600>
     </p>
+    
     <p>
       <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/11.png" width=200>
       <img src="https://github.com/lcylmhlcy/pytorch1.0_MostUse/raw/master/img/12.png" width=200>
@@ -46,7 +49,6 @@
 
 8. [Glow](https://github.com/pytorch/glow): Compiler for Neural Network hardware accelerators  
 
-9. [Ax](https://github.com/facebook/Ax) + [BoTorch](https://github.com/pytorch/botorch): Ax is an accessible, general-purpose platform for understanding, managing, deploying, and automating adaptive experiments.  
-    Adaptive experimentation is the machine-learning guided process of iteratively exploring a (possibly infinite) parameter space in order to identify optimal configurations in a resource-efficient manner. Ax currently supports Bayesian optimization and bandit optimization as exploration strategies. **Bayesian optimization in Ax is powered by BoTorch, a modern library for Bayesian optimization research built on PyTorch.**  
+9. [Ax](https://github.com/facebook/Ax) + [BoTorch](https://github.com/pytorch/botorch): Ax is an accessible, general-purpose platform for understanding, managing, deploying, and automating adaptive experiments. **Bayesian optimization in Ax is powered by BoTorch, a modern library for Bayesian optimization research built on PyTorch.**  
 
 10. [flashtorch](https://github.com/MisaOgura/flashtorch): Visualization toolkit for neural networks in PyTorch - towards explainable and interpretable AI!
