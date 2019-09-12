@@ -51,3 +51,5 @@ drive.mount('/content/drive')
 
 9. [Ax](https://github.com/facebook/Ax) + [BoTorch](https://github.com/pytorch/botorch): Ax is an accessible, general-purpose platform for understanding, managing, deploying, and automating adaptive experiments.  
     Adaptive experimentation is the machine-learning guided process of iteratively exploring a (possibly infinite) parameter space in order to identify optimal configurations in a resource-efficient manner. Ax currently supports Bayesian optimization and bandit optimization as exploration strategies. **Bayesian optimization in Ax is powered by BoTorch, a modern library for Bayesian optimization research built on PyTorch.**  
+    
+10. [flashtorch](https://github.com/MisaOgura/flashtorch): Visualization toolkit for neural networks in PyTorch - towards explainable and interpretable AI!
